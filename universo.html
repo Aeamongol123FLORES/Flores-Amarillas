@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universo de Flores Amarillas 🌻</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body class="universo">
+
+    <div id="scene-container"></div>
+
+    <header class="encabezado-universo">
+
+        <h1>Feliz día de las</h1>
+
+        <h2>Flores Amarillas 🌻</h2>
+
+        <p>
+            Haz clic en una flor o ramo para descubrir un mensaje especial
+        </p>
+
+    </header>
+
+    <a href="index.html" class="boton-volver">
+        ← Volver
+    </a>
+
+    <div class="instrucciones">
+
+        <span>🖱️ Arrastra para observar</span>
+
+        <span>🔍 Usa la rueda para acercarte</span>
+
+        <span>🌻 Haz clic en una flor</span>
+
+    </div>
+
+    <div id="mensaje-flotante" class="mensaje-flotante">
+        Haz clic en una flor amarilla 💛
+    </div>
+
+    <div id="carta-contenedor" class="carta-oculta">
+
+        <div class="carta">
+
+            <button id="cerrar-carta" class="cerrar-carta">
+                ×
+            </button>
+
+            <div class="carta-flor">
+                🌻
+            </div>
+
+            <h2 id="titulo-carta">
+                Un mensaje para ti 💛
+            </h2>
+
+            <p id="texto-carta">
+                Que nunca te falten motivos para sonreír.
+            </p>
+
+            <div class="carta-final">
+                Con mucho cariño 💛
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="universo.js"></script>
+
+</body>
+</html>
